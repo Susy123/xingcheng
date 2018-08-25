@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="HotName">我的证书<text></text></view>
+
+
+    <view class="coupons-list">
+      <view class="coupons-item" wx:for-items="{{coupons}}" wx:key="{{index}}}" bindtap="gitCoupon" data-id="{{item.id}}">
+        <!-- <view class="money-left">{{item.money}}<text>元</text></view> -->
+        <view class="money-right">
+          <view class="money-name">{{item.name}}</view>
+          <!-- <view class="money-hold">满{{item.moneyHreshold}}元使用</view> -->
+        </view>
+        <!-- <view bindtap="gohome" class="money-home">炫耀一下</view> -->
+        <view class="money-fooder">
+          {{item.dateAdd}}获得
+        </view>
+      </view>
+    </view>
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">
+      <view class="text">还没有证书，快来学习吧</view>
+    </view>
+</view>

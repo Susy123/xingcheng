@@ -1,0 +1,15 @@
+<view class="goods-container">
+  <view class="HotName">我的勋章<text></text></view>
+  <view class="goods-fav-box">
+    <!-- <view class="goods-box" wx:for-items="{{favList}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.goodsId}}">
+      <image src="{{item.pic}}_m" class="image" mode="widthFix" lazy-load="true"/>
+    </view> -->
+    
+  </view>
+  <view class="goods-box" wx:for-items="{{medalList}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.goodsId}}">
+      <image src="https://cdn.it120.cc/apifactory/2018/08/22/d3431074e8824b1d572e95df98b9d741.png" class="image" mode="widthFix" lazy-load="true"/>
+    </view>
+  <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">
+    <view class="text">没有任何勋章</view>
+  </view>
+</view>

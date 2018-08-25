@@ -1,0 +1,64 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+	<view class="my-info">
+    <!-- <image class="avatar" src="{{userInfo.avatarUrl}}" /> -->
+    <view class='my-userinfo'>
+    <open-data class="avatar"  type="userAvatarUrl"></open-data>
+    <!-- <view class="my-info-name">{{userInfo.nickName}}<text></text></view> -->
+    <open-data class="my-info-name" type="userNickName"></open-data>
+    </view>
+    <view class="my-info-order">
+      <view class="list-icon" bindtap="goorderlist" data-index="0">
+        <view class="{{tabClass[0]}}"></view>
+        <image src="../../images/my-icon-2.png" />
+        <text>等待付款</text>
+      </view>
+      <view class="list-icon" bindtap="goorderlist" data-index="1">
+        <view class="{{tabClass[1]}}"></view>
+        <image src="../../images/my-icon-1.png" />
+        <text>正在学习</text>
+      </view>
+      <!-- <view class="list-icon" bindtap="goorderlist" data-index="2">
+        <view class="{{tabClass[2]}}"></view>
+        <image src="../../images/my-icon-4.png" />
+        <text>待收货</text>
+      </view> -->
+      <view class="list-icon" bindtap="goorderlist" data-index="3">
+        <view class="{{tabClass[3]}}"></view>
+        <image src="../../images/my-icon-3.png" />
+        <text>已经学完</text>
+      </view>
+    </view>
+  </view>
+  <view class="my-item-list">
+    <view class="my-item"><text></text>
+      <navigator url="/pages/fav-list/index" hover-class="none">我的收藏</navigator>
+      <image src="../../images/right-icon.png" />
+    </view>
+    <view class="my-item"><text></text>
+      <navigator url="/pages/mycoupons/index" hover-class="none">我的证书</navigator>
+      <image src="../../images/right-icon.png" />
+    </view>
+    <!-- <view class="my-item"><text></text>
+      <navigator url="/pages/mymedal/index" hover-class="none">我的勋章</navigator>
+      <image src="../../images/right-icon.png" />
+    </view> -->
+    <view class="my-item"><text></text>
+      <navigator url="/pages/select-address/index" hover-class="none">我的地址</navigator>
+      <image src="../../images/right-icon.png" />
+    </view>
+    <view class="my-item"><text></text>
+      <view class="about" bindtap="getAbout" data-id="{{about.id}}">{{about.title}}</view>
+      <image src="../../images/right-icon.png" />
+    </view>
+  </view>
+  <view class="show-pop" hidden="{{aboutShow}}">
+    <view class="show-pop-box">
+      <image class="close" bindtap="close" src="../../images/about-icon.png" />
+      <view class="show-pop-title"><text class="l"></text>{{about.title}}<text class="r"></text></view>
+      <view class="show-pop-text">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+      </view>
+    </view>
+  </view>
+</view>

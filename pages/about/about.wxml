@@ -1,0 +1,9 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="show-pop">
+    <view class="show-pop-box">
+      <view class="show-pop-title"><text class="l"></text>{{notice.title}}<text class="r"></text></view>
+      <view class="show-pop-text">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+      </view>
+    </view>
+  </view>

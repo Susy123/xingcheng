@@ -1,0 +1,35 @@
+/**app.wxss**/
+page{
+  background-color: #fff;
+  /* background-color: #00755E; */
+}
+.container {
+  width: 100%;
+  height: 100%;
+} 
+.wxParse-img {
+  display: block !important;
+}
+/* view {
+  color: #00755E !important;
+} */
+.HotName text {
+  border: 2px solid #00755E !important;
+}
+.menu-box-list .hover,.a-order .price-box .topay-btn {
+  color:#00755E !important;
+  border: 1px solid #00755E !important;
+}
+.my-item-list .my-item text,.show-pop .show-pop-box .show-pop-title .l,.show-pop .show-pop-box .show-pop-title .r {
+  border: 1px solid #00755E !important;
+}
+.status-box .status-label.active {
+  color: #00755E !important;
+  border-bottom: 1px solid #00755E !important;
+}
+.goods-footer .goods-footer-buy,.popup-join-btn,.jiesuan-box .to-pay-btn,.a-goods-conts .delete-btn,.add-btn,.save-btn {
+  background-color: #00755E !important;
+}
+.swiper-box-info .box-info-money,.goods-container-info .goods-container-money,.pop-goods-price,.buy-num-box .num-box .num-input input,.goods-info .text-box .goods-price, .goods-info .text-box .buy-num input,.goods-list .a-goods .text-box .arow01 .goods-price,.peisong-way-noc .row-info,.jiesuan-box .left-price .row-label,.jiesuan-box .left-price .right-text,.order-list .a-order .price-box .total-price,.show-pop .show-pop-box .show-pop-title {
+  color: #00755E !important;
+}
