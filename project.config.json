@@ -11,6 +11,8 @@
 	"libVersion": "1.9.94",
 	"appid": "wxb20d4ce19156da02",
 	"projectname": "xingcheng",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

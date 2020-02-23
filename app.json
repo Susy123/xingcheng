@@ -4,6 +4,9 @@
     "pages/menu/index",
     "pages/shop-cart/index",
     "pages/my/index",
+    "pages/about/about",
+    "pages/kanjia/index",
+    "pages/notice/show",
     "pages/menu-list/index",
     "pages/goods-details/index",
     "pages/to-pay-order/index",
@@ -49,5 +52,6 @@
         "selectedIconPath": "images/tabbar/user-o.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
